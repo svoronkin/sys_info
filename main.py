@@ -5,6 +5,7 @@ import os
 from typing import Dict, Any
 import glob
 import re
+from psutil import virtual_memory
 
 
 def cpuinfo():
@@ -78,11 +79,17 @@ def detect_devs():
                 print('Device:: {0}, Size:: {1} GiB'.format(device, size(device)))
 
 
+mem_bytes = os.sysconf('SC_PAGE_SIZE') * os.sysconf('SC_PHYS_PAGES')  # e.g. 4015976448
+mem_gib = mem_bytes/(1024.**3)  # e.g. 3.74
+
+
 if __name__ == '__main__':
     cpuinfo = cpuinfo()
     print("CPU:")
     for processor in cpuinfo.keys():
         print("\t" + cpuinfo[processor]['model name'])
+    print("RAM:")
+    print(mem_gib)  # total physical memory available
     print("LAN:")
     netdevs = netdevs()
     for dev in netdevs.keys():
