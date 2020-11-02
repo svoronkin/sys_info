@@ -5,7 +5,6 @@ import os
 from typing import Dict, Any
 import glob
 import re
-from psutil import virtual_memory
 
 
 def cpuinfo():
@@ -38,12 +37,12 @@ def cpuinfo():
 
 
 def process_list():
-    pids = []
+    pid_s = []
     for subdir in os.listdir('/proc'):
         if subdir.isdigit():
-            pids.append(subdir)
+            pid_s.append(subdir)
 
-    return pids
+    return pid_s
 
 
 def netdevs():
