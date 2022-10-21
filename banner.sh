@@ -66,5 +66,7 @@ do
 
 done
 echo
+df -hT
+echo
 echo
 
