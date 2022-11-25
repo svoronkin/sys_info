@@ -1,6 +1,4 @@
 # sys_info
-Попытка набросать небольшой скрипт, собирающий инфу о системе, железе, процессах и пр. и выводящий эти данные при подключении к хосту по ssh.
-
-# Установка
-
-banner.sh скопировать на диск, chmod +x , в конец /etc/bashrc дописать путь до скрипта.
+Small scrypt for display info about system (cpu. ram, hdd, user, ip address, etc) in shell \ ssh console
+** usage **
+copy banner.sh somwhere at disk, chmod +x , add in the emd of /etc/bashrc path to scrypt.
