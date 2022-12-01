@@ -3,4 +3,4 @@ Small script for display info about system (cpu. ram, hdd, user, ip address, etc
 # usage #
 Copy banner.sh somewhere at disk, chmod +x , add in the end of /etc/bashrc path to scrypt.
 
-#python version is in progress
+# python version is in progress
