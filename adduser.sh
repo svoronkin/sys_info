@@ -4,7 +4,7 @@
 # Am i Root user?
 if [ $(id -u) -eq 0 ]; then
 	read -p "Enter username : " username
-	read -s -p "Enter password : " password
+	read -p "Enter password : " password
 	egrep "^$username" /etc/passwd >/dev/null
 	if [ $? -eq 0 ]; then
 		echo "$username exists!"
