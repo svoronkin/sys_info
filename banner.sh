@@ -1,14 +1,14 @@
 #!/bin/sh
 # положить, дописать путь до скрипта в конец /etc/bashrc
 #
-
-[ -r /etc/lsb-release ] && . /etc/lsb-release
-
-if [ -z "$DISTRIB_DESCRIPTION" ] && [ -x /usr/bin/lsb_release ]; then
-        # Fall back to using the very slow lsb_release utility
-        DISTRIB_DESCRIPTION=$(lsb_release -s -d)
-fi
-
+#
+#[ -r /etc/lsb-release ] && . /etc/lsb-release
+#
+#if [ -z "$DISTRIB_DESCRIPTION" ] && [ -x /usr/bin/lsb_release ]; then
+#        # Fall back to using the very slow lsb_release utility
+#        DISTRIB_DESCRIPTION=$(lsb_release -s -d)
+#fi
+#
 figlet $(hostname)
 printf "\n"
 
