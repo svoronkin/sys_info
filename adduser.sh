@@ -13,7 +13,7 @@ if [ $(id -u) -eq 0 ]; then
 		pass=$(perl -e 'print crypt($ARGV[0], "password")' $password)
 		useradd -m -p "$pass" "$username"
 		usermod -aG sudo "$username"
-		[ $? -eq 0 ] && echo "User has been added to system!" || echo "Failed to add a user!"
+		[ $? -eq 0 ] && echo "User $username has been added to system as sudoer!" || echo "Failed to add a user!"
 	fi
 else
 	echo "Only root may add a user to the system."
