@@ -1,5 +1,5 @@
 #!/bin/bash
-# Purpose - Script to add a user to Linux system including passsword
+# Purpose - Script to add a sudo user to Linux system including passsword
 # ------------------------------------------------------------------
 # Am i Root user?
 if [ $(id -u) -eq 0 ]; then
