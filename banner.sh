@@ -12,7 +12,7 @@
 figlet $(hostname)
 printf "\n"
 
-printf "Welcome to %s (%s).\n" "$DISTRIB_DESCRIPTION" "$(uname -r)"
+printf "Welcome to %s (%s).\n" "$DISTRIB_DESCRIPTION" "$(lsb_release -s -d)"
 printf "\n"
 
 #System date
