@@ -1,6 +1,4 @@
 #!/bin/bash
-# Author: Yevgeniy Goncharov aka xck, http://sys-adm.in
-# Collect & Check Linux server status
 
 # Sys env / paths / etc
 # -------------------------------------------------------------------------------------------\
