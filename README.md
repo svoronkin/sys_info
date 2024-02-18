@@ -83,5 +83,5 @@ git clone https://github.com/svoronkin/sys_prep.git
 
 After clone go to folder and run script:
 ```bash
-cd system-checks && ./sys_check.sh
+cd sys_prep && ./sys_check.sh
 ```
