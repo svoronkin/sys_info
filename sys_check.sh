@@ -283,6 +283,7 @@ test_v4() {
         speedtest_v4 "http://speedtest.wdc01.softlayer.com/downloads/test10.zip" "Washington, D.C. (east)\t"
         speedtest_v4 "http://speedtest.sjc01.softlayer.com/downloads/test10.zip" "San Jose, California (west)"
         speedtest_v4 "http://speedtest.frankfurt.linode.com/100MB-frankfurt.bin" "Frankfurt, DE, JP\t"
+        speedtest_v4 "https://speedtest.selectel.ru/100MB" "Moscow RU"
     fi
 }
 
